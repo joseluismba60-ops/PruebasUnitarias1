@@ -31,4 +31,12 @@ public class ValidadorRegistroTest {
         assertFalse(esUnNombreVacio,"El sistema deberia rechazarlo devolviendo false");
     }
 
+    @Test
+    @DisplayName("Reto 2 (Password justa)")
+    public void testPasswordJusta(){
+        String contraseña = "ABC12345";
+        boolean esUnaPasswordJusta = contraseña.length() <= 8 ;
+        assertTrue(esUnaPasswordJusta,"El sistema deberia aceptarla devolviendo true");
+    }
+
 }
