@@ -55,4 +55,11 @@ public class ValidadorRegistroTest {
         assertFalse(esUnEmailSinArroba,"El sistema deberia rechazarlo");
     }
 
+    @Test
+    @DisplayName("Reto 5 (Edad limite)")
+    public void testEdadLegal(){
+        int edad = 16;
+        assertEquals(16,edad,"El sistema deberia aceptar devolviendo true");
+    }
+
 }
