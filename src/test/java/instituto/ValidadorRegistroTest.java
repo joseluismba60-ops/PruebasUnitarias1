@@ -47,4 +47,12 @@ public class ValidadorRegistroTest {
         assertFalse(esUnaPasswordCorta,"El sistema deberia rechazarla");
     }
 
+    @Test
+    @DisplayName("Reto 4 (Email sin arroba)")
+    public void testEmailSinArroba(){
+        String email = "usuario.gmail.com";
+        boolean esUnEmailSinArroba = email.contains("@");
+        assertFalse(esUnEmailSinArroba,"El sistema deberia rechazarlo");
+    }
+
 }
